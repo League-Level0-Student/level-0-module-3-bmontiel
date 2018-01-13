@@ -1,3 +1,4 @@
+
 //    Copyright (c) The League of Amazing Programmers 2013-2017
 //    Level 0
 
@@ -26,16 +27,18 @@ public class HighLowGame {
 			if (number == random) {
 				// 6. win
 				JOptionPane.showMessageDialog(null, "You Win!");
+				System.exit(0);
 			}
+
 			// 7. if the guess is high
 			else if (number > random) {
 				// 8. tell them it's too high
-				String high = JOptionPane.showInputDialog(null, "Its too high");
+				guess = JOptionPane.showInputDialog(null, "Its too high");
 			}
 			// 9. if the guess is low
 			else {
 				// 10. tell them it's too low
-				String low = JOptionPane.showInputDialog("Its too low");
+				guess = JOptionPane.showInputDialog("Its too low");
 			}
 		}
 		// 12. tell them they lose
